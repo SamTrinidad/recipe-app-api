@@ -24,7 +24,6 @@ def create_recipe(user, **params):
     # Update the defaults with the params
     defaults.update(params)
 
-    # **defaults is the same as title='Sample recipe', time_minutes=10, price=Decimal('5.00')
     return Recipe.objects.create(user=user, **defaults)
 
 
